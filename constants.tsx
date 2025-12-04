@@ -1,6 +1,6 @@
 
 import { PortfolioItem, SocialItem } from './types';
-import { Home, Search, MonitorPlay, BookOpen, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Home, Search, MonitorPlay, BookOpen, Github, Linkedin, Mail } from 'lucide-react';
 
 // Using a high-quality Plexus Network/Nodes video from Pixabay (matches your screenshot style)
 export const HERO_VIDEO_URL = "https://cdn.pixabay.com/video/2020/06/17/42220-432585292_large.mp4";
@@ -187,3 +187,5 @@ export const EXPERIENCE: PortfolioItem[] = [
     logo: 'https://upload.wikimedia.org/wikipedia/en/d/d6/Osmania_University_Logo.png'
   }
 ];
+
+export const RESUME_URL = "https://www.linkedin.com/in/abdulzahidshaik"; // Replace with actual resume PDF link when available
