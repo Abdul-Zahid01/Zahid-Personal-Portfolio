@@ -135,8 +135,7 @@ export const EXPERIENCE: PortfolioItem[] = [
     category: 'Experience',
     year: 2022,
     duration: 'Mar - Dec',
-    role: 'Research Engineer',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Portland_State_University_logo.svg/800px-Portland_State_University_logo.svg.png'
+    role: 'Research Engineer'
   },
   {
     id: 'e3',
@@ -147,8 +146,7 @@ export const EXPERIENCE: PortfolioItem[] = [
     category: 'Experience',
     year: 2022,
     duration: 'Mar - Dec',
-    role: 'Jr Software Engineer',
-    logo: 'https://mma.prnewswire.com/media/1723223/Nowcom_Logo.jpg'
+    role: 'Jr Software Engineer'
   },
   {
     id: 'e4',
@@ -159,8 +157,7 @@ export const EXPERIENCE: PortfolioItem[] = [
     category: 'Experience',
     year: 2021,
     duration: 'Jul - Oct',
-    role: 'Software Developer Intern',
-    logo: 'https://ui-avatars.com/api/?name=AgrieTern&background=random&size=128&bold=true'
+    role: 'Software Developer Intern'
   },
   {
     id: 'edu1',
@@ -171,8 +168,7 @@ export const EXPERIENCE: PortfolioItem[] = [
     category: 'Experience',
     year: 2024,
     duration: 'Graduated',
-    role: 'Education',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Portland_State_University_logo.svg/800px-Portland_State_University_logo.svg.png'
+    role: 'Education'
   },
   {
     id: 'edu2',
@@ -183,8 +179,7 @@ export const EXPERIENCE: PortfolioItem[] = [
     category: 'Experience',
     year: 2021,
     duration: 'Graduated',
-    role: 'Education',
-    logo: 'https://upload.wikimedia.org/wikipedia/en/d/d6/Osmania_University_Logo.png'
+    role: 'Education'
   }
 ];
 

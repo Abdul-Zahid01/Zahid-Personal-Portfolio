@@ -25,8 +25,8 @@ const ContentRow: React.FC<ContentRowProps> = ({ title, items, isVertical = fals
         <div className="mb-12 px-4 md:px-12 group">
             <h2 className="text-zinc-200 text-lg md:text-2xl font-bold mb-4 flex items-center group-hover:text-white transition-colors">
                 {title}
-                <span className="hidden group-hover:inline-block ml-2 text-xs text-cyan-400 font-normal opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0">
-                    Explore All
+                <span className="hidden group-hover:inline-block ml-2 text-xs text-zinc-500 font-normal opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0">
+                    Chronological Order
                 </span>
             </h2>
              <div className="space-y-4">
@@ -49,14 +49,6 @@ const ContentRow: React.FC<ContentRowProps> = ({ title, items, isVertical = fals
                                 ))}
                              </div>
                         </div>
-                        
-                         {/* Optional: Add Logo if exists in vertical view */}
-                         {item.logo && (
-                             <div className="hidden md:block w-16 h-16 ml-4 rounded-full overflow-hidden bg-white p-1">
-                                 <img src={item.logo} alt="Logo" className="w-full h-full object-contain" />
-                             </div>
-                         )}
-
                     </div>
                  ))}
              </div>
