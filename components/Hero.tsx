@@ -9,6 +9,8 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     if (videoRef.current) {
+      // Set the default muted state and the current muted state
+      videoRef.current.defaultMuted = isMuted;
       videoRef.current.muted = isMuted;
     }
   }, [isMuted]);
@@ -21,6 +23,12 @@ const Hero: React.FC = () => {
     setIsVideoLoaded(true);
   };
 
+  const handleVideoError = () => {
+      // If video fails (e.g., Drive link blocking streaming), remove spinner so app doesn't look broken
+      console.warn("Hero video failed to load, likely due to hosting restrictions.");
+      setIsVideoLoaded(true);
+  };
+
   return (
     <div className="relative w-full h-[85vh] md:h-[95vh] overflow-hidden bg-black">
       {/* Background Video Wrapper */}
@@ -30,9 +38,10 @@ const Hero: React.FC = () => {
             src={HERO_VIDEO_URL}
             autoPlay
             loop
-            muted // Start muted for autoplay policies
+            // REMOVED hardcoded 'muted' attribute to prevent conflict.
             playsInline
             onCanPlay={handleVideoLoad}
+            onError={handleVideoError}
             className="w-full h-full object-cover"
           />
       </div>

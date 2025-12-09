@@ -1,11 +1,8 @@
-
 import { PortfolioItem, SocialItem } from './types';
 import { Home, Search, MonitorPlay, BookOpen, Github, Linkedin, Mail } from 'lucide-react';
 
-// Using a high-quality Plexus Network/Nodes video from Pixabay (matches your screenshot style)
-export const HERO_VIDEO_URL = "https://cdn.pixabay.com/video/2020/06/17/42220-432585292_large.mp4";
-
-export const HERO_DATA = {
+// Updated to the local video file in the public folder
+export const HERO_VIDEO_URL = "https://drive.google.com/uc?export=download&id=1We-0PRa_twzJASDLdvSQLlz6pWh3AxKe";export const HERO_DATA = {
   title: "Software Engineer & GenAI Specialist",
   description: "Specializing in Python, AWS, and Generative AI. Experienced in designing and deploying secure, scalable ML and GenAI solutions using TensorFlow, PyTorch, LangChain, and SageMaker.",
   tags: ["Python", "AWS", "GenAI", "React", "TensorFlow"]
