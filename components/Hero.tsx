@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
                 playsInline
                 className={`absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover -translate-x-1/2 -translate-y-1/2 transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-60' : 'opacity-0'}`}
                 onCanPlay={() => setIsVideoLoaded(true)}
-                onError={(e) => {
+                onError={() => {
                     // Fail silently to avoid console spam, just don't show the video
                     console.log("Video load error, ensure URL is valid."); 
                 }}
