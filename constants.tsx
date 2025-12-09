@@ -1,8 +1,14 @@
 import { PortfolioItem, SocialItem } from './types';
 import { Home, Search, MonitorPlay, BookOpen, Github, Linkedin, Mail } from 'lucide-react';
 
-// Updated to the local video file in the public folder
-export const HERO_VIDEO_URL = "https://github.com/Abdul-Zahid01/Zahid-Personal-Portfolio/blob/main/hero-video.mp4";
+// PRIMARY: Direct Video URL (Smoother, reliable, no embed errors)
+// Using a high-quality cinematic abstract background similar to the requested style.
+export const HERO_VIDEO_URL = "https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4";
+
+// FALLBACK: YouTube Video ID (If HERO_VIDEO_URL is empty, this will be used)
+// Note: Many music/cinematic videos disable embedding (Error 153). 
+export const HERO_VIDEO_ID = ""; // "iktSfTR8d9U" was restricted.
+
 export const HERO_DATA = {
   title: "Software Engineer & GenAI Specialist",
   description: "Specializing in Python, AWS, and Generative AI. Experienced in designing and deploying secure, scalable ML and GenAI solutions using TensorFlow, PyTorch, LangChain, and SageMaker.",
